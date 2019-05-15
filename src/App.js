@@ -46,7 +46,7 @@ class App extends React.Component {
     return (
         <div>
           <p>number:</p>
-          <input type='text' onChange={this.OnChange} />
+          <input type='number' onChange={this.OnChange} autoFocus='true'/>
           <button onClick={this.Submit}>submit</button>
           {this.state.valid === false && <p color='red'>number must be biger than 1000 and with 2 floating point at most</p>}
           <hr/>
